@@ -41,11 +41,29 @@ body {
 }
 
 .boxes {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 500px;
     width: 500px;
+    position: relative;
+    transition: .4s ease;
 }
+.boxes.big{
+    width: 600px;
+    height: 600px;
+}
+.boxes.big .box {
+    transform: rotateZ(360deg);
+}
+
 .box{
-    background: yellow;
+    background-image: url('https://media3.giphy.com/media/xwO7G4wKDbcPu/giphy.webp?cid=ecf05e47habo76ozt172abi2juz4wdoz8eoirfz6txoxwtdf&rid=giphy.webp&ct=g');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
     height: 125px;
     width: 125px;
+    transition: .4s ease;
 }
